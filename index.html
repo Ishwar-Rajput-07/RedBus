@@ -21,8 +21,14 @@
         border: 2px solid red;
     }
 
+    .icon {
+        margin: 5px;
+        border-radius: 10px;
+    }
+
     .bg-success {
         background-color: green;
+        /* background-color: red; */
     }
 </style>
 
@@ -41,18 +47,54 @@
 
 
     <div class=" bus">
-        <div class="seat" onclick="handelSeatSelect(`s1`)" id="s1"></div>
-        <div class="seat" onclick="handelSeatSelect(`s2`)" id="s2"></div>
-        <div class="seat" onclick="handelSeatSelect(`s3`)" id="s3"></div>
-        <div class="seat" onclick="handelSeatSelect(`s4`)" id="s4"></div>
-        <div class="seat" onclick="handelSeatSelect(`s5`)" id="s5"></div>
-        <div class="seat" onclick="handelSeatSelect(`s6`)" id="s6"></div>
-        <div class="seat" onclick="handelSeatSelect(`s7`)" id="s7"></div>
-        <div class="seat" onclick="handelSeatSelect(`s8`)" id="s8"></div>
-        <div class="seat" onclick="handelSeatSelect(`s9`)" id="s9"></div>
-        <div class="seat" onclick="handelSeatSelect(`s10`)" id="s10"></div>
-        <div class="seat" onclick="handelSeatSelect(`s11`)" id="s11"></div>
-        <div class="seat" onclick="handelSeatSelect(`s12`)" id="s12"></div>
+        <div class="icon" onclick="handelSeatSelect(`s1`)" id="s1">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s2`)" id="s2">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s3`)" id="s3">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s4`)" id="s4">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s5`)" id="s5">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s6`)" id="s6">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s7`)" id="s7">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s8`)" id="s8">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s9`)" id="s9">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s10`)" id="s10">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s11`)" id="s11">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
+        <div class="icon" onclick="handelSeatSelect(`s12`)" id="s12">
+            <img src="https://cdn2.iconfinder.com/data/icons/theater-6/128/seat_seats_sitting_chair_theatre-1024.png"
+                alt="" height="90px" width="50px">
+        </div>
     </div>
 
     <h2 id="text1"></h2>
@@ -66,13 +108,13 @@
 
 
         function handelSeatSelect(seatId) {
-            let hasClass = document.getElementById(seatId).classList.contains("bg-success")
+            let hasClass = document.getElementById(seatId).classList.contains("bg-danger")
             if (hasClass) {
-                document.getElementById(seatId).classList.remove("bg-success")
+                document.getElementById(seatId).classList.remove("bg-danger")
             } else {
-                document.getElementById(seatId).classList.add("bg-success")
+                document.getElementById(seatId).classList.add("bg-danger")
             }
-            let x = document.querySelectorAll(".bg-success")
+            let x = document.querySelectorAll(".bg-danger")
 
 
             let seatIds = ""
